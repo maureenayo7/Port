@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Maureen Ayo's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c3ec77bdf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="navbar">
+        <div class="logo"><a href="#">Personal Portfolio</a></div>
+        
+        <ul class="links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle("open");
+          const isOpen = dropDownMenu.classList.contains("open");
+
+          toggleBtnIcon.className = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+      <div class="container">
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span> Maureen</span> Ayo,<br />
+            a final year student<br />
+            at Strathmore University <br />
+            in Kenya.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/pic.jpg " />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+             I am a passionate student in the field of Business Information Technology (BBIT) at Strathmore University.
+             Let me share a bit about my academic journey;
+
+            <p>
+              In 2020, I embarked on my tertiary education journey at Strathmore University.
+               I started with an International Computer Driving License (ICDL) certificate, laying a strong foundation for my digital literacy skills. 
+               Subsequently, I pursued a diploma in Business Information Technology, which I successfully completed in 2022.
+               Currently, I am in my final year of pursuing a degree in Business Information Technology at Strathmore University. 
+             <p>
+             What really gets me excited is always trying to get better. 
+             I like facing challenges and learning new things all the time.
+             Every day gives me a chance to grow, and I'm ready to take it.
+             I don't just want to improve myself; I also enjoy working with different people. 
+             I think having different opinions helps us come up with new ideas and do better work.
+
+            <div class="tab-titles">
+              <h1 class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </h1>
+              
+              <h1 class="tab-links" onclick="opentab('education')">
+                Education
+              </h1>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX design</span><br />Designing web application
+                  interfaces using Figma.
+                </li>
+
+                <li>
+                  <span>Web Development</span><br />Developing web applications
+                  using HTML, CSS, JavaScript, Python and PHP 
+                </li>
+
+                <li>
+                  <span>Mobile Application Development</span><br />Designing and
+                  building of Android and IOS applications.
+                </li>
+
+                <li>
+                  <span>Editing</span><br />Making of posters for events,
+                  parties and anouncements.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 May - Current</span><br />Working with my team on improving communication
+                  at Strathmore university (clubs & scocieties and students)
+                </li>
+
+                <li>
+                  <span>2021 March - 2021 October</span><br />Created a library management system application 
+                  using JAVA for my diploma certification.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Current </span><br />Student at Strathmore
+                  University <br />Bachelors in Business and Information
+                  Technology.
+                </li>
+
+                <li>
+                  <span>2020 - 2021</span><br />Student at Strathmore University
+                  <br />Diploma in Business and Information Technology
+                </li>
+
+                <li>
+                  <span>January 2020 - April 2020</span><br />Student at Strathmore University
+                  <br />International Computer Driving Licencse
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/proj1.png" />
+            <div class="layer">
+              <h3>Improving communication in Strathmore</h3>
+              <p>
+                This link redirects you to the documentation of a project I am still working on.
+               It entails details of analysis of Strathmore means of communication.
+              </p>
+              <a href="https://docs.google.com/document/d/1JKbvcT1noVdJcOs6fY1sZemh9qTCUVuh/edit#heading=h.gjdgxs"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/projj2.jpeg" />
+            <div class="layer">
+              <h3>Job Listing Web Application</h3>
+              <p>
+                The web application connects employers and employees where the
+                employers post a vacant position on the web application then a
+                candidate that feels like they are suitable for that position
+                send the resumes on that particular job post.
+              </p>
+              <a href="https://github.com/BlvckBantu/Job-Lisitng-Website"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ayomaureen7@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+254713500246</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/k.i.n.t.e?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                ><i class="fa-brands fa-instagram"></i>instagram</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="6"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      var menuIcon = document.querySelector(".menu-icon");
+
+      function toggleMenu() {
+        var sidemenu = document.getElementById("sidemenu");
+        var menuIcon = document.querySelector(".fa-bars");
+        var closeIcon = document.querySelector(".fa-xmark");
+
+        sidemenu.classList.toggle("show-menu");
+        menuIcon.style.display =
+          menuIcon.style.display === "none" ? "block" : "none";
+        closeIcon.style.display =
+          closeIcon.style.display === "none" ? "block" : "none";
+      }
+
+      menuIcon.addEventListener("click", toggleMenu);
+      closeIcon.addEventListener("click", toggleMenu);
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzf4cLfAunJt3Yl4UNqCU6quHxHjLKp8lVmb29gQGMdluflJd6u4pB7Hsb1ghfiIOncQQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      // JavaScript to toggle the navigation menu on click of the menu icon
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright © Maureen Ayo 2024 </p>
+      </div>
+
+      <!-- Back to Top Button -->
+      <div class="back-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </footer>
+  </body>
+</html>
